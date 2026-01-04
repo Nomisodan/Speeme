@@ -33,7 +33,7 @@ def layout_view(request):
             except IntegrityError:
                 message = "Username already taken."
 
-    return render(request, "layout.html", {"message": message})
+    return render(request, "Layout.html", {"message": message})
 
 def logout_view(request):
     logout(request)
